@@ -1,50 +1,193 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna & Nazarii | 19.09.2026</title>
 
-<title>Anna & Nazarii | Wedding</title>
+    <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<section class="hero">
-
-<div class="overlay"></div>
-
-<div class="content">
-
-<h2 class="date">
-19 • 09 • 2026
-</h2>
-
-<h1>
-Anna
-<span>&</span>
-Nazarii
-</h1>
-
-<p>
-Запрошуємо Вас розділити
-найважливіший день нашого життя
-</p>
-
-<button id="openInvitation">
-Відкрити запрошення
-</button>
-
+<!-- МУЗИКА -->
+<div class="music-player">
+    <button id="musicToggle" class="music-btn">
+        <span class="music-icon">♪</span>
+    </button>
+    <audio id="backgroundMusic" loop autoplay preload="auto">
+        <source src="images/music/wedding.mp3" type="audio/mpeg">
+    </audio>
 </div>
 
+<!-- ПЕЛЮСТКИ ТРОЯНД -->
+<div class="petals-container"></div>
+
+<!-- HERO / КОНВЕРТ -->
+<section class="hero" id="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <div class="envelope-wrapper">
+            <div class="envelope" id="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body">
+                    <div class="envelope-text">
+                        <div class="envelope-front">
+                            <h3>19 • 09 • 2026</h3>
+                            <h1>Anna <span>&</span> Nazarii</h1>
+                        </div>
+                        <div class="envelope-inside">
+                            <p class="invitation-text">Запрошуємо Вас розділити найважливіший день нашого життя</p>
+                            <p class="invitation-subtitle">Наша історія розпочинається 19 вересня 2026 року</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="envelope-hint">Клікніть на конверт ↓</p>
+        </div>
+    </div>
 </section>
+
+<!-- ІСТОРІЯ -->
+<section id="story" class="story-section">
+    <div class="section-content fade-in-section">
+        <h2>Наша історія</h2>
+        <p>Любов — це найпрекрасніша подорож.<br>
+        І ми будемо щасливі пройти наступний її етап разом із Вами.</p>
+    </div>
+</section>
+
+<!-- ТАЙМЕР -->
+<section class="countdown" id="invitation">
+    <h2 class="fade-in-section">До нашого особливого дня</h2>
+    <div class="timer fade-in-section">
+        <div class="box">
+            <span id="days" class="timer-number">0</span>
+            <p>Днів</p>
+        </div>
+        <div class="box">
+            <span id="hours" class="timer-number">0</span>
+            <p>Годин</p>
+        </div>
+        <div class="box">
+            <span id="minutes" class="timer-number">0</span>
+            <p>Хвилин</p>
+        </div>
+        <div class="box">
+            <span id="seconds" class="timer-number">0</span>
+            <p>Секунд</p>
+        </div>
+    </div>
+</section>
+
+<!-- ПОЦІЛУНОК / КОХАННЯ -->
+<section class="love-section" id="love">
+    <div class="love-content">
+        <div class="love-image-wrapper">
+            <img src="images/photos/D31BBF36-9B85-4484-AAB1-83DB0FB50418.JPEG" alt="Наш поцілунок" class="love-image">
+            <div class="love-overlay"></div>
+        </div>
+        <div class="love-text">
+            <h2 class="love-quote fade-in-section">Кохання — це подорож,<br>яку ми обираємо<br>пройти разом</h2>
+        </div>
+    </div>
+</section>
+
+<!-- ГАЛЕРЕЯ -->
+<section class="gallery" id="gallery">
+    <h2 class="fade-in-section">Наші моменти ❤️</h2>
+    <div class="gallery-grid fade-in-section">
+        <div class="gallery-item">
+            <img src="images/photos/0D7EF643-A948-4BAD-AF78-0FFCD0B7080E.JPEG" alt="Фото 1">
+        </div>
+        <div class="gallery-item">
+            <img src="images/photos/E390E6C0-C732-49D3-BFC7-F301D23B5229.JPEG" alt="Фото 2">
+        </div>
+        <div class="gallery-item">
+            <img src="images/photos/56FFE6C0-1000-41E3-9C84-D60C07D91970.JPEG" alt="Фото 3">
+        </div>
+        <div class="gallery-item">
+            <img src="images/photos/A11F38D0-8371-44AE-A99E-68FE8D52FFE8.JPEG" alt="Фото 4">
+        </div>
+    </div>
+</section>
+
+<!-- ПРОГРАМА ДНЯ -->
+<section class="schedule" id="schedule">
+    <h2 class="fade-in-section">Програма дня</h2>
+    <div class="timeline fade-in-section">
+        <div class="event">
+            <div class="time">11:00</div>
+            <div class="text">
+                <h3>Розпис</h3>
+                <p>Pražský hrad</p>
+            </div>
+        </div>
+        <div class="event">
+            <div class="time">13:30</div>
+            <div class="text">
+                <h3>Святковий банкет</h3>
+                <p>Golemův Restaurant</p>
+            </div>
+        </div>
+        <div class="event">
+            <div class="time">20:00</div>
+            <div class="text">
+                <h3>Танці та розваги</h3>
+                <p>До пізної ночи</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ЛОКАЦІЯ -->
+<section class="location" id="location">
+    <h2 class="fade-in-section">Місце проведення</h2>
+    <div class="location-card fade-in-section">
+        <h3>🏛️ Pražský hrad</h3>
+        <p class="address">Hradčany, 119 08 Praha 1</p>
+        <p class="address">Praha, Česká republika</p>
+        <a class="map-button" href="https://anna-nazarii.com" target="_blank" rel="noopener noreferrer">
+            🌐 Відкрити сайт
+        </a>
+    </div>
+</section>
+
+<!-- ПРОЖИВАННЯ -->
+<section class="accommodation" id="accommodation">
+    <h2 class="fade-in-section">Де ми будемо проживати</h2>
+    <div class="accommodation-card fade-in-section">
+        <h3>🏡 Riverside SPIRIT</h3>
+        <p class="accommodation-address">Podskalská 27, Praha, 128 00</p>
+        <div class="accommodation-details">
+            <div class="detail-item">
+                <span class="detail-label">�️ Дата заїзду:</span>
+                <span class="detail-value">18 вересня</span>
+            </div>
+        </div>
+        <p class="accommodation-desc">Чудові апартаменти для комфортного перебування під час святкування</p>
+    </div>
+</section>
+
+<!-- ФИНАЛ -->
+<section class="finale" id="finale">
+    <div class="finale-content">
+        <img src="images/photos/6E3E4E60-18C6-4092-A714-E0D7CBD65598.JPEG" alt="Фінал на яхті" class="finale-image">
+        <div class="finale-overlay"></div>
+        <div class="finale-text">
+            <h2>Дякуємо, що будете<br>частиною нашого<br>найважливішого дня</h2>
+            <p>Anna & Nazarii</p>
+            <p class="finale-date">19.09.2026</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>Anna & Nazarii | 19.09.2026 | Дякуємо за Вашу присутність 💍</p>
+</footer>
 
 <script src="script.js"></script>
 
