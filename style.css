@@ -945,135 +945,137 @@ section h2::after {
 
 @media (max-width: 768px) {
     section {
-        padding: 60px 20px;
+        padding: 70px 16px;
     }
 
     section h2 {
-        font-size: 36px;
-        margin-bottom: 40px;
+        font-size: 30px;
+        margin-bottom: 28px;
+        display: block;
+        left: auto;
+        transform: none;
     }
 
-    .love-content {
-        grid-template-columns: 1fr;
-        height: auto;
-    }
-
-    .love-text {
-        padding: 60px 30px;
-        min-height: 60vh;
-    }
-
-    .love-quote {
-        font-size: 32px;
-    }
-
-    .finale-text h2 {
-        font-size: 36px;
-    }
-
-    .finale-text p {
-        font-size: 18px;
+    .hero-content {
+        padding: 16px;
     }
 
     .music-player {
-        top: 18px;
-        right: 18px;
+        top: 14px;
+        right: 14px;
     }
 
     .music-btn {
-        width: 50px;
-        height: 50px;
-        font-size: 22px;
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
     }
 
     .envelope {
-        width: min(92vw, 360px);
-        min-height: 220px;
+        width: min(92vw, 340px);
+        min-height: 210px;
+    }
+
+    .envelope-body {
+        padding: 18px;
     }
 
     .envelope-text h1 {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .envelope-text h3 {
-        font-size: 13px;
+        font-size: 12px;
+        letter-spacing: 2px;
     }
 
     .invitation-text {
-        font-size: 14px;
+        font-size: 15px;
+        max-width: 280px;
     }
 
     .invitation-subtitle {
         font-size: 12px;
     }
 
-    .timer {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-
-    .box {
-        width: 120px;
-        height: 120px;
-    }
-
-    .timer-number {
-        font-size: 40px;
-    }
-
-    .box p {
+    .envelope-hint {
+        margin-top: 18px;
         font-size: 12px;
     }
 
+    .section-content {
+        padding: 24px 18px;
+        border-radius: 20px;
+    }
+
+    .story-section p {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    .timer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .box {
+        width: min(43vw, 112px);
+        height: 112px;
+    }
+
+    .timer-number {
+        font-size: 34px;
+    }
+
+    .box p {
+        font-size: 11px;
+    }
+
     .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        grid-template-columns: 1fr;
+        gap: 14px;
+        max-width: 360px;
     }
 
     .event {
-        grid-template-columns: 70px 1fr;
-        gap: 20px;
-        padding: 25px;
-        margin-bottom: 15px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 20px;
+        margin-bottom: 14px;
     }
 
     .time {
-        font-size: 26px;
+        font-size: 22px;
+        justify-content: flex-start;
     }
 
     .text h3 {
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .text p {
         font-size: 14px;
     }
 
-    .location-card {
-        padding: 35px 25px;
+    .location-card,
+    .accommodation-card {
+        padding: 24px 18px;
+        border-radius: 20px;
     }
 
-    .location-card h3 {
-        font-size: 28px;
+    .location-card h3,
+    .accommodation-card h3 {
+        font-size: 24px;
     }
 
-    .address {
-        font-size: 16px;
+    .address,
+    .accommodation-address,
+    .detail-item {
+        font-size: 15px;
     }
 
-    .story-section p {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    section {
-        padding: 50px 15px;
-    }
-
-    section h2 {
-        font-size: 28px;
-        margin-bottom: 30px;
+    .love-section {
+        min-height: auto;
     }
 
     .love-content {
@@ -1081,82 +1083,100 @@ section h2::after {
         height: auto;
     }
 
+    .love-image-wrapper {
+        min-height: 280px;
+    }
+
     .love-text {
-        padding: 40px 20px;
-        min-height: 50vh;
+        padding: 30px 18px;
+        min-height: auto;
     }
 
     .love-quote {
         font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .finale {
+        min-height: 80vh;
+    }
+
+    .finale-content,
+    .finale-image {
+        min-height: 80vh;
     }
 
     .finale-text h2 {
         font-size: 28px;
+        line-height: 1.4;
+        margin-bottom: 22px;
     }
 
     .finale-text p {
-        font-size: 16px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 56px 14px;
+    }
+
+    section h2 {
+        font-size: 26px;
+        margin-bottom: 24px;
     }
 
     .envelope {
-        width: min(94vw, 260px);
-        min-height: 160px;
+        width: min(94vw, 280px);
+        min-height: 175px;
     }
 
     .envelope-text h1 {
-        font-size: 22px;
+        font-size: 24px;
     }
 
-    .envelope-text h3 {
-        font-size: 11px;
+    .invitation-text {
+        font-size: 14px;
+        max-width: 240px;
     }
 
-    .envelope-text p {
-        font-size: 10px;
-    }
-
-    .timer {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-
-    .box {
-        width: 100px;
-        height: 100px;
-    }
-
-    .timer-number {
-        font-size: 32px;
-    }
-
-    .gallery-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .event {
-        grid-template-columns: 60px 1fr;
-        gap: 15px;
-        padding: 20px;
-    }
-
-    .time {
-        font-size: 20px;
-    }
-
-    .text h3 {
-        font-size: 18px;
+    .section-content {
+        padding: 20px 14px;
     }
 
     .story-section p {
         font-size: 16px;
     }
 
-    .location-card {
-        padding: 25px 20px;
+    .box {
+        width: min(44vw, 100px);
+        height: 100px;
     }
 
-    .location-card h3 {
+    .timer-number {
+        font-size: 28px;
+    }
+
+    .love-quote {
+        font-size: 20px;
+    }
+
+    .location-card,
+    .accommodation-card {
+        padding: 20px 14px;
+    }
+
+    .location-card h3,
+    .accommodation-card h3 {
+        font-size: 22px;
+    }
+
+    .finale-text h2 {
         font-size: 24px;
+    }
+
+    .finale-text p {
+        font-size: 16px;
     }
 }

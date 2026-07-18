@@ -67,10 +67,10 @@ if (envelope) {
     envelope.addEventListener("click", () => {
         envelope.classList.add("opened");
 
-        // Перейти на наступну секцію після відкриття
+        // Перейти на наступну секцію після відкриття з більшою паузою для мобільних
         setTimeout(() => {
-            document.getElementById("story").scrollIntoView({ behavior: "smooth" });
-        }, 1000);
+            document.getElementById("story").scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 1600);
     });
 }
 
